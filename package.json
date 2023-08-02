@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "electron": "^25.4.0",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security"
+  },
+  "name": "cosan",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node main/service.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
