@@ -7,7 +7,7 @@
   "name": "cosan",
   "description": "",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "main/service.js",
   "devDependencies": {},
   "scripts": {
     "start": "node main/service.js"
