@@ -131,3 +131,4 @@ dist
 
 # folders with unsharable files
 media/*
+push2git
