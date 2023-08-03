@@ -10,7 +10,7 @@
   "main": "main/service.js",
   "devDependencies": {},
   "scripts": {
-    "start": "node main/service.js"
+    "start": "clear && node main/service.js"
   },
   "keywords": [],
   "author": "",
