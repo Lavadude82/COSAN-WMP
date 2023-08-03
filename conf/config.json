@@ -2,7 +2,8 @@
     "paths": [
         "media/music",
         "media/videos",
-        "media/pictures"
+        "media/pictures",
+        "/mnt/chromeos/MyFiles/Downloads"
     ],
     "formats":[
         ".mp4",

@@ -1,5 +1,8 @@
 #!/bin/bash
+clear
+if [ "$1" == "push2main" ]; then
 git add *
-git commit -m "$1"
-echo "Commit Message - \"$1\""
+git commit -m "$2"
+
 git push origin main
+fi

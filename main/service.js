@@ -48,8 +48,24 @@ function GetMedia(config) {
     let f = e;
     filesInPath[i] = { files: f, dir: config.paths[i] };
   });
-  return filesInPath;
+  let f = filesInPath;
+  let files = [];
+  f.forEach((e1, i1) => {
+    e1.files.forEach((e2, i2) => {
+      let file = e1.dir + "/" + e2;
+      files.push({
+        dir: file,
+        size: fs.statSync(file).size,
+        name: file.substring(file.lastIndexOf("/") + 1, file.lastIndexOf(".")),
+        extension: file
+          .substring(file.lastIndexOf(".") + 1, file.length)
+          .toUpperCase(),
+      });
+    });
+  });
+  return files;
 }
-app.post("/getMedia", (req, res) => {
-  let files = GetMedia(conf);
-});
+
+app.post("/getMedia", (req, res) => {});
+let a = GetMedia(conf);
+console.log(a);
